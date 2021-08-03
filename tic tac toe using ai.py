@@ -1,12 +1,5 @@
-####	TIC TAC TOE    ####
-
-# START;
-
-
-# FUNCTIONS;
-
 def default():
-    # To be printed as Default;
+    # Default print statement;
     print("\nWelcome! Let's play TIC TAC TOE!\n")
 
 
@@ -22,7 +15,7 @@ def rules():
 
 
 def play():
-    # Asking if the player is ready;
+    # Ask if the player is ready r not;
     return input("\nAre you ready to play the game? Enter [Y]es or [N]o.\t").upper().startswith('Y')
 
 
@@ -50,8 +43,7 @@ def choice():
         if p1_choice == 'X' or p1_choice == 'O':
             # if entered value is X or O; get out of the loop;
             break
-        print("INVALID INPUT! Please Try Again!")
-        # if the entered value isn't X or O, re-run the while loop;
+        print("INVALID INPUT! Please Try Again!") # if the entered value isn't X or O, re-run the while loop;
 
         # WHILE LOOP ENDS
     # Assigning the value to p2 and then diplaying the values;
@@ -323,16 +315,9 @@ while True:
                 else:
                     turn = p1_name
 
-    # If the users want to play the game again?
-    if replay():
-        # if Yes;
+    if replay(): #  If wanted 2 play again
         continue
     else:
-        # if No;
         break
 
-    ####################################################################################
-
 print("\n\n\t\t\tTHE END!")
-
-# END
